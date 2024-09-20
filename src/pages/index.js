@@ -39,7 +39,7 @@ export default function Home({ headerAlert, closeAlert }) {
   const connectWallet = async () => {
     if (await checkNetwork()) {
       web3Modal = new Web3Modal({
-        network: 'mainnet', // optional
+        network: 'Sepolia', // optional
         cacheProvider: true,
         providerOptions, // required
       })
